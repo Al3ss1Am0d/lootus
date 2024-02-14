@@ -11,11 +11,10 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: url("images/1.jpg");
+    background: url("img/background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
 }
-.container img { max-width: 100px; }
 }
