@@ -12,9 +12,9 @@
 }
 body{
     background: url("img/background.png");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow: hidden;
+    background-position: center;
+    min-height: 100vh;
 }
 }
