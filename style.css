@@ -17,4 +17,7 @@ body{
     background-attachment: fixed;
     overflow: hidden;
 }
+.logo {
+  background-size: 100px 50px;
+}
 }
