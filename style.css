@@ -36,4 +36,8 @@ ul.navlist{
   display: flex;
   align-items: center;
 }
+
+
+ul.navlist li{
+  margin-left: 2.5rem;
 }
