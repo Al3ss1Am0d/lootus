@@ -48,4 +48,6 @@ ul.navlist li{
   background: transparent;
   color: #fff;
   padding: 6px 24px;
+  border: 2px solid #fff;
+  border-radius: .5rem;
 }
