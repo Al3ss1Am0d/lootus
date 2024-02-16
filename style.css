@@ -41,3 +41,9 @@ ul.navlist{
 ul.navlist li{
   margin-left: 2.5rem;
 }
+
+.login-btn{
+  display: inline-block;
+  font-size: 1rem;
+  background: transparent;
+}
