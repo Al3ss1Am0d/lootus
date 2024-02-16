@@ -46,4 +46,6 @@ ul.navlist li{
   display: inline-block;
   font-size: 1rem;
   background: transparent;
+  color: #fff;
+  padding: 6px 24px;
 }
