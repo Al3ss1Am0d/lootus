@@ -53,6 +53,8 @@ ul.navlist li{
   border-radius: .5rem;
   font-weight: 600;
   cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
 }
 
 .login-btn:hover{
@@ -70,4 +72,6 @@ ul.navlist li{
   right: -50%;
   top: -50%;
   line-height: 0.34cm;
+  border-radius: 50%;
+  z-index: -1;
 }
