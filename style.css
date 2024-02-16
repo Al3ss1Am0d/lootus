@@ -53,3 +53,7 @@ ul.navlist li{
   font-weight: 600;
   cursor: pointer;
 }
+
+.login-btn:hover{
+  color: #16116a;
+}
