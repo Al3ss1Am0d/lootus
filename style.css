@@ -95,5 +95,10 @@ ul.navlist li{
   backdrop-filter: blur(.8rem);
   border: 2px solid #fff;
   border-radius: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .4s ease-out;
 }
 
