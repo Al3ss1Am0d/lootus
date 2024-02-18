@@ -91,7 +91,8 @@ ul.navlist li{
 .card{
   width: 400px;
   height: 450px;
-  background: red;
+  background: transparent;
+  backdrop-filter: blur(.8rem);
 }
 
 .login-btn:hover::after{
