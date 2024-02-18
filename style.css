@@ -89,6 +89,7 @@ ul.navlist li{
 }
 
 .card{
+  position: relative;
   width: 400px;
   height: 450px;
   background: transparent;
@@ -201,5 +202,22 @@ form button{
 
 .registerDown p a:hover{
   text-decoration: underline;
+}
+
+.closeBtn{
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  background: #fff;
+  padding: 5px;
+  border-radius: 20px 5px 5px 5px;
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.closeBtn i{
+  color: #16116a;
+  font-size: 1.3rem;
+  font-weight: 600;
 }
 
