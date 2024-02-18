@@ -149,7 +149,10 @@ form .inputBox{
   font-size: 1.3rem;
 }
 
-.inputBox input:focus~label,
+.inputBox input:focus~label{
+  top: -3px;
+}
+
 .inputBox input:valid~label{
   top: -3px;
 }
