@@ -76,6 +76,15 @@ ul.navlist li{
   z-index: -1;
   transform: scale(0,0)
 }
+.login-btn:hover::after{
+  transform: scale(1,1);
+}
+
+.card{
+  width: 400px;
+  height: 450px;
+  background: red;
+}
 
 .login-btn:hover::after{
   transform: scale(1,1)
