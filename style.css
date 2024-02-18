@@ -94,6 +94,7 @@ ul.navlist li{
   background: transparent;
   backdrop-filter: blur(.8rem);
   border: 2px solid #fff;
+  border-radius: 1.5rem;
 }
 
 .login-btn:hover::after{
