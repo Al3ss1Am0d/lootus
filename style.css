@@ -97,6 +97,3 @@ ul.navlist li{
   border-radius: 1.5rem;
 }
 
-.login-btn:hover::after{
-  transform: scale(1,1)
-}
