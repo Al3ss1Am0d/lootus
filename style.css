@@ -93,6 +93,7 @@ ul.navlist li{
   height: 450px;
   background: transparent;
   backdrop-filter: blur(.8rem);
+  border: 2px solid #fff;
 }
 
 .login-btn:hover::after{
