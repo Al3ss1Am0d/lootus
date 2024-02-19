@@ -11,7 +11,7 @@ lootus é um site e um servidor de Discord para os amantes de anime e manga. Aqu
 - Discord: [discord.gg/lootus](https://discord.gg/lootus)
 
 ## Contribuição
-- Se você gostou do nosso projeto e quer nos ajudar a melhorá-lo, você pode enviar suas sugestões, feedback, críticas ou elogios para o nosso e-mail lootus@gmail.com ou para o nosso canal de Discord #sugestões.
+- Se você gostou do nosso projeto e quer nos ajudar a melhorá-lo, você pode enviar suas sugestões, feedback, críticas ou elogios para o nosso e-mail discordgglootus@gmail.com ou para o nosso canal de Discord #sugestões.
 - Se você quer entrar em contato conosco para parcerias, publicidade ou outros assuntos, você pode usar o mesmo e-mail ou o nosso canal de Discord #contato.
 
 ## Licença
