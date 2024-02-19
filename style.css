@@ -1,5 +1,5 @@
 /* POPPINS FONT */
-  @import url('https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
 
 *{  
     margin: 0;
@@ -50,197 +50,188 @@ ul.navlist li{
   margin-left: 2.5rem;
 }
 
-.login-btn{
-  position: relative;
-  display: inline-block;
-  font-size: 1rem;
-  background: transparent;
-  color: #fff;
-  padding: 6px 24px;
-  border: 2px solid #fff;
-  border-radius: .5rem;
-  font-weight: 600;
-  cursor: pointer;
-  z-index: 1;
-  overflow: hidden;
+:root {
+  /* Light */
+  --color-light-50: #f8fafc;
+
+  /* Dark */
+  --color-dark-50: #797984;
+  --color-dark-100: #312d37;
+  --color-dark-900: #000;
+
+  /* Purple */
+  --color-purple-50: #7c3aed;
+  --color-purple-100: #a855f7;
+  --color-purple-200: #bf46ef;
+
+  /* Gradient */
+  --color-gradient: linear-gradient(90deg, var(--color-purple-50), var(--color-purple-100), var(--color-purple-200));
 }
 
-.login-btn:hover{
-  color: #16116a;
+/* General */
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.login-btn::after{
-  content: "";
-  position: absolute;
-  background: #fff;
-  padding: 2rem 1rem;
-  display: block;
-  transition: all ease .65s;
-  left: -50%;
-  right: -50%;
-  top: -50%;
-  line-height: 0.34cm;
-  border-radius: 50%;
-  z-index: -1;
-  transform: scale(0,0)
-}
-.login-btn:hover::after{
-  transform: scale(1,1);
-}
-
-.card{
-  position: relative;
-  width: 400px;
-  height: 450px;
-  background: transparent;
-  backdrop-filter: blur(.8rem);
-  border: 2px solid #fff;
-  border-radius: 1.5rem;
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+#container {
+  height: 100vh;
+  width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
-  transition: all .4s ease-out;
-  opacity: 0;
-  transform: scale(1.1);
+  align-items: center;
+  background: var(--color-gradient);
 }
 
-.card.show{
-  opacity: 1;
-  transform: scale(1);
+#login_form {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  background-color: var(--color-light-50);
+  padding: 30px 40px;
+  border-radius: 8px;
+  gap: 30px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.336);
+  animation: dark-to-light-background 0.3s ease-in-out;
 }
 
-section{
-  padding: 2.5rem;
-  width: 100%;
-}
-
-section h2{
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-form .inputBox{
-  position: relative;
-  border-bottom: 2px solid #fff;
-  width: 100%;
-  height: 2rem;
-  margin-top: 2rem;
-  font-size: 1rem;
-}
-
-.inputBox input{
-  background: transparent;
-  outline: none;
-  border: none;
-  width: 100%;
-  height: 100%;
-  padding: 0 30px 0 3px;
-}
-
-.inputBox label{
-  position: absolute;
-  left: 2px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1rem;
-  transition: all ease .45s;
-  pointer-events: none;
-}
-
-.inputBox span{
-  position: absolute;
-  top: 7px;
-  right: 0;
-}
-
-.inputBox span i{
-  font-size: 1.3rem;
-}
-
-.inputBox input:focus~label,
-.inputBox input:valid~label{
-  top: -3px;
-}
-
-.recovery-pass{
+/* Form Header */
+#form_header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: .9rem;
-  margin: 10px 0;
 }
 
-.recovery-pass label input{
-  margin-right: 5px;
+#form_header h1 {
+  font-size: 40px;
+  position: relative;
 }
 
-.recovery-pass a{
-  letter-spacing: 1px;
-}
-
-.recovery-pass a:hover {
-  text-decoration: underline;
-}
-
-form button{
-  width: 100%;
-  color: #16116a;
-  border: none;
-  padding: 14px 0;
-  border-radius: .5rem;
-  margin: 1rem auto;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-.registerDown{
-  text-align: center;
-  font-size: .9rem;
-  margin-top: 10px;
-  font-weight: 500;
-}
-
-.registerDown p a{
-  letter-spacing: 1px;
-}
-
-.registerDown p a:hover{
-  text-decoration: underline;
-}
-
-.closeBtn{
+#form_header h1::before {
   position: absolute;
-  top: 1%;
-  left: 1%;
-  background: #fff;
-  padding: 5px;
-  border-radius: 20px 5px 5px 5px;
+  content: '';
+  width: 40%;
+  height: 3px;
+  background-color: var(--color-purple-50);
+  bottom: 10px;
+  border-radius: 5px;
+}
+
+#mode_icon {
   cursor: pointer;
-  display: inline-flex;
+  font-size: 20px;
 }
 
-.closeBtn i{
-  color: #16116a;
-  font-size: 1.3rem;
-  font-weight: 600;
+/* Social Media */
+#social_media {
+  display: flex;
+  justify-content: space-around;
 }
 
-.container-form{
-  width: 100%;
+#social_media img {
+  width: 35px;
 }
 
-.container-form .registerCard{
-  display: none;
+#social_media img:hover {
+  transform: scale(1.2);
 }
 
-.container-form.active .registerCard{
-  display: block;
+/* Inputs */
+#inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.container-form .loginCard{
-  display: none;
+.input-box>label {
+  font-size: 14px;
+  color: var(--color-dark-50);
 }
 
+.input-field {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 3px;
+  border-bottom: 1px solid var(--color-purple-50);
+  cursor: text;
+}
+
+.input-field i {
+  font-size: 18px;
+  cursor: text;
+  color: var(--color-dark-900);
+} 
+
+.input-field input {
+  border: none;
+  width: 260px;
+  background-color: transparent;
+  font-size: 18px;
+  padding: 0px 5px;
+}
+
+.input-field input:focus {
+  outline: none;
+}
+
+/* Forgot password */
+#forgot_password a {
+  text-decoration: none;
+  color: var(--color-dark-50);
+  font-size: 12px;
+}
+
+#forgot_password a:hover {
+  color: var(--color-purple-50);
+}
+
+/* Login Button */
+#login_button {
+  border: none;
+  background: var(--color-gradient);
+  padding: 7px;
+  border-radius: 3px;
+  color: var(--color-light-50);
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#login_button:hover {
+  transform: scale(1.05);
+}
+
+/* Dark Mode */
+.dark#login_form {
+  color: var(--color-light-50);
+  background-color: var(--color-dark-100);
+  animation: light-to-dark-background 0.3s ease-in-out;
+}
+
+.dark#login_form .input-field input,
+.dark#login_form .input-field i {
+  color: var(--color-light-50);
+}
+
+@keyframes dark-to-light-background {
+  0% {
+      background-color:var(--color-dark-100);
+  }
+  100.0% {
+      background-color:var(--color-light-50);
+  }
+}
+
+@keyframes light-to-dark-background {
+  0% {
+      background-color:var(--color-light-50);
+  }
+  100.0% {
+      background-color:var(--color-dark-100); 
+  }
+}

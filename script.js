@@ -1,26 +1,18 @@
 const openBtn = document.querySelector("#openBtn");
-card = document.querySelector(".card");
-closeBtn = document.querySelector(".closeBtn");
-loginLink = document.querySelector(".loginLink")
-registerLink = document.querySelector(".registerLink");
-containerform = document.querySelector(".containerform")
 
+mode.addEventListener('click', () => {
+    const form = document.getElementById('login_form');
 
+    if(mode.classList.contains('fa-moon')) {
+        mode.classList.remove('fa-moon');
+        mode.classList.add('fa-sun');
 
-openBtn.addEventListener("click", ()=>{
-    card.classList.add('show'); // feche o parêntese aqui
-})
+        form.classList.add('dark');
+        return ;
+    }
+    
+    mode.classList.remove('fa-sun');
+    mode.classList.add('fa-moon');
 
-closeBtn.addEventListener("click", ()=>{
-    card.classList.remove('show');
-})
-
-registerLink.addEventListener('click',(e)=>{
-    e.preventDefault();
-    containerform.classList.add('active');
-})
-
-loginLink.addEventListener('click',(e)=>{
-    e.preventDefault();
-    containerform.classList.remove('active');
-})
+    form.classList.remove('dark');
+});
