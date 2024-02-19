@@ -24,3 +24,20 @@ loginLink.addEventListener('click',(e)=>{
     e.preventDefault();
     containerform.classList.remove('active');
 })
+
+//a function that generates bubbles
+
+const createBubble = ()=>{
+    const section = document.querySelector('.bubble-background');
+    const bubbleEl = document.createElement('span');
+    bubbleEl.className = "bubble"
+    const minSize = 10;
+    const maxSize = 40;
+    const size = Math.random() * (maxSize + 1 - minSize) + minSize;
+    bubbleEl.style.width = `${size}px`;
+    bubbleEl.style.height = `${size}px`;
+    bubbleEl.style.left = Math.random() * innerWidth + 'px';
+    section.appendChild(bubbleEl);
+}
+
+setInterval(createBubble,500);
