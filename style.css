@@ -102,10 +102,12 @@ ul.navlist li{
   justify-content: center;
   transition: all .4s ease-out;
   opacity: 0;
+  transform: scale(1.1);
 }
 
 .card.show{
   opacity: 1;
+  transform: scale(1);
 }
 
 section{
