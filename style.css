@@ -265,7 +265,7 @@ form button{
   width: 100%;
   height: 100%;
   transform: scale(0.255) translate(-70% , -70%);
-  background: radial-gradient(circle at center, rgba(255,0,0,0.8) 0%, rgba(255,255,255,0.5) 100%);
+  background: radial-gradient(circle at center, rgba(128,0,128,0.8) 0%, rgba(255,255,255,0.5) 100%);
   border-radius: 50%;
 }
 
