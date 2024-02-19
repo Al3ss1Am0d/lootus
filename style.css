@@ -231,3 +231,11 @@ form button{
 .container-form .registerCard{
   display: none;
 }
+
+.container-form.active .registerCard{
+  display: block;
+}
+
+.container-form .loginCard{
+  display: none;
+}
