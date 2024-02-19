@@ -1,5 +1,5 @@
 const openBtn = document.querySelector("#openBtn");
-    card = document.querySelector(".card);
+    card = document.querySelector(".card");
     closeBtn = document.querySelector(".closeBtn");
 
 
