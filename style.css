@@ -101,6 +101,11 @@ ul.navlist li{
   align-items: center;
   justify-content: center;
   transition: all .4s ease-out;
+  opacity: 0;
+}
+
+.card.show{
+  opacity: 1;
 }
 
 section{
